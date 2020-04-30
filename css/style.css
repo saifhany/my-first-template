@@ -1,0 +1,351 @@
+ nav { 
+
+    position: fixed;
+ }
+.nav-link { 
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 10px !important ;
+    padding-right: 10px !important ;
+
+
+
+}
+.nav-item:active {
+ border-left: 3px solid #444;
+}
+.carousel-item { 
+ height: 450px !important;
+}
+
+.carousel-image-1{
+    background: url('../img/image1.jpg');
+    background-size: cover;
+
+}
+.carousel-image-2{
+    background: url('../img/image2.jpg');
+    background-size: cover;
+
+} 
+
+.carousel-image-3{
+    background: url('../img/image3.jpg');
+    background-size: cover;
+
+}
+.fa { 
+    font-size: 55px !important;
+}
+#home-heading { 
+    position: relative;
+     background: url(../img/lights.jpg);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     height: 200px;
+     text-align: center;
+
+}
+
+.dark-overlay { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0 , 0 ,0 ,0.7);
+    
+
+
+}
+body {
+    overflow-x: hidden; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+#vedio-play { 
+    position: relative;
+    background: url(../img/media.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 200px;
+    background-position: 0 -300px;
+    text-align: center;
+
+}
+#vedio-play a{ 
+    color: white;
+}
+#lab .img-fluid:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  /* The grid: Four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .containerrr {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  /* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* Add a background color when the inputs get focus */
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Style the horizontal ruler */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+   
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+  }
+  #footerr { 
+      background-color: black;
+      margin: -16px;
+
+  }
+  #page-header {
+    height: 200px;
+    background-image: url('../img/image1.jpg');
+    background-attachment: fixed; 
+    background-position: 0 -360px ;
+    color: #fff;
+    border-top: 100px;
+    border-bottom: 1px #eee solid;
+    padding-top: 50px;
+
+
+  }
+  #about img {  
+    transition: transform .2s;
+    width: 308px;
+    height: 269px;
+    margin-left: 165px;
+    margin-top: -13px;
+
+  }
+
+  #about img:hover  { 
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+  }
+  #about .column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  #about  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #about .name { 
+    border: 12px solid white;
+    border-radius: 20px;
+  }
+  * {box-sizing:border-box}
+
+  #accordionExample button{ 
+    list-style: none;
+  } 
+  
+ /* Style inputs with type="text", select elements and textareas */
+ #blog input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+#blog  input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+#blog input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+#blog .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+#staff hr {
+   border: 1px solid #f1f1f1 !important; 
+  margin-bottom: 25px !important;
+}
